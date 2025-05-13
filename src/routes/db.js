@@ -1,7 +1,7 @@
 
 import mongoose from 'mongoose';
 
-const mongoURL = `mongodb+srv://sergiofourmi:UUm780lYhSiqA5Ph@cluster0.dp3e9.mongodb.net/Cloen0005?retryWrites=true&w=majority&appName=ClusterCloen`;
+const mongoURL = process.env.MONGO_URI;
 
 const connectDB = async () => {
   try {
